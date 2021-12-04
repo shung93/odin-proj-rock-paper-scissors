@@ -10,13 +10,13 @@ function playRound(playerSelection, computerSelection) {
 */
 
 function playRound() {
-    let playerSelection = prompt("Please choose your weapon");
+    let playerSelection = prompt("Please choose your weapon (either rock, paper, or scissors).");
     playerSelection = playerSelection.toLowerCase();
     const initComputerSelection = Math.floor(Math.random() * 3) + 1;
     let computerSelection;
 
     if ((playerSelection != 'rock') && (playerSelection != 'paper') && (playerSelection != 'scissors')) {
-        console.log('Please provide a valid weapon.')
+        console.log('Please provide a valid option.')
         return 
     }
 
@@ -42,10 +42,10 @@ function game_winner(playerSelection, computerSelection) {
         console.log('Paper beats rock')
         return 1
     } else if (playerSelection == 'scissors' && computerSelection == 'paper') {
-        console.log('Scissors beat paper')
+        console.log('Scissors beats paper')
         return 1
     } else {
-        console.log('Sucks to suck - the computer chose ' + computerSelection + ' to beat you')
+        console.log('You lost to the computer. The computer chose ' + computerSelection + ' to beat you')
         return 0
     }
 
@@ -71,7 +71,7 @@ function playGame() {
     if (playerScore > computerScore) {
         console.log("Congrats..you won... You beat a PC at rock-paper-scissors...")
     } else if (computerScore > playerScore) {
-        console.log("You lost...really sucks to suck.")
+        console.log("You lost...womp womp...")
     } else {
         console.log("You tied...how did you even get here...")
     }
