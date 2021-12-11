@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: Roboto, 'Helvetica Neue', sans-serif;
+    min-height: 100vh;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    padding: 45px 75px 45px 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #F9FAF8;
+    background: #1F2937;
+}
+
+.logo {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.sublogo {
+    font-size: 36px;
+    padding: 5px;   
+}
+
+.content {
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 55px 50px 55px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.content > .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.content > .container > .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 20px 20px 20px;
+    gap: 30px;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #1F2937;
+}
+
+.scores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background: rgb(182, 182, 182);
+    gap: 25px;
+}
+
+.scores > .scorebox {
+    border: 2px solid #1F2937;
+    color: #040d1a;
+    width: 500px;
+    height: 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.hoverOut {
+    transform: scale(1.1);
+    border-color: #429edb;
+    box-shadow: 0 0 1rem #429edb;
+    transition: 0.25s;
+}
+
+.hoverIn {
+    transform: scale(1);
+    transition: 0.25s;
+}
